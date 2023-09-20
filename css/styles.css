@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 90%;
+    margin:auto;
+}
+h1{
+    background-color: black;
+    display : flex;
+    color: white;
+}
+header{
+    background-color: blueviolet;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+}
+footer{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    border : 2px solid white;
+}
+div img{
+    border-radius: 50%;
+    border: 2px solid green;
+}
+#edito{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border : 2px solid white;
+
+}
+#projet{
+    background-color: red;
+    border-radius: 15px;
+    border : 2px solid white;
+}
+#prj1{
+    background-color: blue;
+    border-radius: 15px;
+    border: 1px solid green;
+}
+#prj2{
+    background-color: blue;
+    border-radius: 15px;
+    border: 1px solid green;
+}
+#prj3{
+    background-color: blue;
+    border-radius: 15px;
+    border: 1px solid green;
+}
+#prj4{
+    background-color: blue;
+    border-radius: 15px;
+    border: 1px solid green;
+}
+#prj5{
+    background-color: blue;
+    border-radius: 15px;
+    border: 1px solid green;
+}
+#prj6{
+    background-color: blue;
+    border-radius: 15px;
+    border: 1px solid green;
+}
