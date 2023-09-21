@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/formulaire.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="javascript/index.js"></script>
+    <script defer src="javascript/formulaire.js"></script>
     
 </head>
 <body>
     
     <header>
         <h1><b>Bastien Kuntz</b></h1>
-        <div class="topclass_bar" id="Topnav">
-            
-            <div id="menu">   
-                <a href="#home">home</a>
-                <a href="#news">news</a>
-                <a href="#contact">contact</a>
-                <a href="#botom">botom</a>
-            </div>
+            <div class="topclass_bar" id="Topnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         <!--section logo-->
     
         <!--section menu de navigation-->
@@ -44,9 +55,72 @@
             <div id="prj4">projet 4</div>
             <div id="prj5">projet 5</div>
             <div id="prj6">projet 6</div>
-
+            
+        </section>  
+            <div class="container">
+                <form>
+                  <label class="texte" for="nom">Nom</label>
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Saisissez votre nom..."
+                  />
+          
+                  <label class="texte" for="prenom">Prénom</label>
+                  <input
+                    type="text"
+                    id="prenom"
+                    name="prenom"
+                    placeholder="Saisissez votre prénom"
+                  />
+          
+                  <label class="texte" for="objet">Objet du message</label>
+                  <select id="objet" name="objet">
+                    <option value="0">choisissez une option dans la liste ...</option>
+                    <option value="Prise de contact">Prise de contact</option>
+                    <option value="Réclamation client">Réclamation client</option>
+                  </select>
+          
+                  <label class="texte" for="commentaire">Commentaire</label>
+                  <textarea
+                    id="commentaire"
+                    name="commentaire"
+                    placeholder="Saisissez votre message..."
+                    rows="10"
+                  ></textarea>
+                  <div id="gdpr">
+                    <label for="rgpd" id="rgpdLabel">
+                      J'accepte les conditions d'utilisation du site et confirme avoir
+                      pris connaissance de la politique de confidentialité du site
+                      présentée ci-dessous</label
+                    >
+                    <input type="checkbox" id="rgpd" name="rgpd" />
+          
+                    <article id="politique" name="politique" rows="10">
+                      <h3>Kaamelott Ipsum</h3>
+                      <span
+                        ><a href="https://www.kaamelott-ipsum.online/" target="_blank"
+                          >Générateur de lorem ipsum sur le thème de Kaamelott.
+                        </a></span
+                      >
+                      <p>
+                        Mais ils ont pas le droit de décider de la retraite eux-mêmes! On
+                        l’a dit et redit ça! On plaisante, on plaisante… P’tite pucelle!
+                      </p>
+                      <p>
+                        Ah ben non tant que vous nous obligez pas à les manger! Hé mais
+                        j'ai failli me la prendre! Mais bien sûr, comme ça au lieu de
+                        confondre les signes, ils auraient confondu les couleurs! C’est
+                        une tarte aux myrtilles. Pourquoi elle vous revient pas?
+                      </p>
+                    </article>
+                  </div>
+                </form>
+                <button id="soumettre">Valider</button>
+                <span id="message"></span>
+              </div>
         
-    </section>
         <!--contacts-->
         <!-- formulaire en javascript-->
         
@@ -59,6 +133,6 @@
             <a href="https://twitter.com/NainBes" target="_blank"><img src="image/imgTwitter.jpg"></a>
             <a href="https://app.milanote.com/1QDzbt1P4Usdu6/home" target="_blank"><img src="image/img milanote.png"></a>
     </footer>
-    <script src="javascript/index.js"></script>
+    
 </body>
 </html>
