@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css"> 
     <link rel="stylesheet" href="css/formulaire.css" >
+    <link rel="stylesheet" href="css/carrousel.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -15,6 +16,7 @@
     />
     <script defer src="javascript/index.js"></script>
     <script defer src="javascript/formulaire.js"></script>
+    <script defer src="javascript/edito.js"></script>
     
 </head>
 <body>
@@ -26,7 +28,7 @@
                 <a href="#news">News</a>
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="javascript:void(0);" class="icon" src="image/img_menu.png" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
                 </a>
               </div>
@@ -42,19 +44,79 @@
     <section class="imageprofil"><img id="image"  src="image/imgprofil.jpeg" ></img></section>
     <main>
         <!--section edito-->
-        <section id="edito">
-        <p >edito</p>
-        <p>ceci est un texte représentatif de moi</p>
-        </section>
+
+        <div id="carrousel">
+          <div id="container">
+          </div>
+              <img src="image/bouton.png" class="bouton" id="d" >
+              <img src="image/bouton.png" class="bouton" id="g" >
+      </div>
+
         <!--projets-->
         <section id="projet">
         
-            <div id="prj1"><img src="image/img milanote.png"></img></div>
-            <div id="prj2">projet 2</div>
-            <div id="prj3">projet 3</div>
-            <div id="prj4">projet 4</div>
-            <div id="prj5">projet 5</div>
-            <div id="prj6">projet 6</div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="image/imageroute1.jpg"></img>
+              </div>
+              <div class="flip-box-back">
+                <img class="img1" src="image/imageroute1.jpg"></img>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img  src="image/imageroute1.jpg"></img>
+              </div>
+              <div class="flip-box-back">
+                <img class="img2" src="image/imageroute1.jpg"></img>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img  src="image/image2.jpeg"></img>
+              </div>
+              <div class="flip-box-back">
+                <img class="img3" src="image/image2.jpeg"></img>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projet1">  
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2>Front Side</h2>
+              </div>
+              <div class="flip-box-back">
+                <h2>Back Side</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2>Front Side</h2>
+              </div>
+              <div class="flip-box-back">
+                <h2>Back Side</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2>Front Side</h2>
+              </div>
+              <div class="flip-box-back">
+                <h2>Back Side</h2>
+              </div>
+            </div>
+          </div>
             
         </section>  
             <div class="container">
@@ -106,7 +168,7 @@
                       >
                       <p>
                         Mais ils ont pas le droit de décider de la retraite eux-mêmes! On
-                        l’a dit et redit ça! On plaisante, on plaisante… P’tite pucelle!
+                        l’a dit et redit ça! On plaisante, on plaisante… 
                       </p>
                       <p>
                         Ah ben non tant que vous nous obligez pas à les manger! Hé mais
